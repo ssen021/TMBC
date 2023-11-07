@@ -6,5 +6,5 @@ export const MovieListContainer = styled.div`
   gap: 20px;
   justify-content: center;
   margin: 20px;
-  margin-left: 100px;
+  margin-left: 20px;
 `;

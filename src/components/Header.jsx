@@ -1,5 +1,5 @@
 import React from "react";
-import { BannerInfo, StyledLink } from "./Header.style";
+import { BannerInfo, StyledLink, GlobalStyle } from "./Header.style";
 import { useNavigate } from "react-router-dom"; // useNavigate 훅을 import합니다.
 
 export default function Header() {
@@ -12,13 +12,14 @@ export default function Header() {
 
   return (
     <BannerInfo>
+      <GlobalStyle />
       <img
         className="logo"
         style={{
           width: "154px",
           height: "20px",
           marginRight: "30px",
-          marginLeft: "230px",
+          marginLeft: "180px",
           cursor: "pointer",
         }}
         src="https://www.themoviedb.org/assets/2/v4/logos/v2/blue_short-8e7b30f73a4020692ccca9c88bafe5dcb6f8a62a4c6bc55cd9ba82bb2cd95f6c.svg"

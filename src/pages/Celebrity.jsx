@@ -3,7 +3,7 @@ import React from "react";
 export default function Celebrity() {
   return (
     <div>
-      <p>인물</p>
+      <h2> 인물</h2>
     </div>
   );
 }
