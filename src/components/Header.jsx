@@ -1,6 +1,7 @@
 import React from "react";
 import { BannerInfo, StyledLink, GlobalStyle } from "./Header.style";
-import { useNavigate } from "react-router-dom"; // useNavigate 훅을 import합니다.
+import { useNavigate } from "react-router-dom";
+import LoginControl from "./LoginControl";
 
 export default function Header() {
   const navigate = useNavigate(); // useNavigate 훅을 사용하여 navigate 함수를 가져옵니다.
@@ -29,6 +30,7 @@ export default function Header() {
       <StyledLink to="/Movies">영화</StyledLink>
       <StyledLink to="/TV">TV프로그램</StyledLink>
       <StyledLink to="/Celebrity">인물</StyledLink>
+      <LoginControl />
     </BannerInfo>
   );
 }
