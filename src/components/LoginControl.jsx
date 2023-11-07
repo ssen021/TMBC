@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { LoginBox } from "./LoginControl.style";
+import { LoginBox, StyledParagraph, Button } from "./LoginControl.style";
 
 class LoginControl extends Component {
   constructor(props) {
@@ -22,19 +22,19 @@ class LoginControl extends Component {
 
     let button;
     if (isLoggedIn) {
-      button = <button onClick={this.handleLogoutClick}>로그아웃</button>;
+      button = <Button onClick={this.handleLogoutClick}>로그아웃</Button>;
     } else {
-      button = <button onClick={this.handleLoginClick}>로그인</button>;
+      button = <Button onClick={this.handleLoginClick}>로그인</Button>;
     }
 
     return (
       <LoginBox>
-        {isLoggedIn ? (
-          <h1>환영합니다! 로그인되었습니다.</h1>
-        ) : (
-          <h1>로그인이 필요합니다.</h1>
-        )}
         {button}
+        {isLoggedIn ? (
+          <StyledParagraph>환영합니다!</StyledParagraph>
+        ) : (
+          <StyledParagraph>로그인 해주세요</StyledParagraph>
+        )}
       </LoginBox>
     );
   }
