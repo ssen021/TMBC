@@ -8,3 +8,20 @@ export const MovieListContainer = styled.div`
   margin: 20px;
   margin-left: 20px;
 `;
+
+export const DetailInfo = styled.div`
+  display: flex;
+  margin-left: 200px;
+  margin-top: 50px;
+
+  p {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+  }
+`;
+
+export const DetailPoster = styled.img`
+  width: 300px;
+  height: 450px;
+`;

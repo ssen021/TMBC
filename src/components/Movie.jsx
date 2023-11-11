@@ -5,10 +5,20 @@ import {
   MovieDescription,
   MovieInfo,
 } from "./Movie.style";
+import { useNavigate } from "react-router-dom";
 
 function Movie(props) {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    // 클릭한 영화의 title을 사용하여 MovieDetail 페이지로 이동
+    navigate(`/movie/${props.title}`, {
+      state: props,
+    });
+  };
+
   return (
-    <StyledMovie>
+    <StyledMovie onClick={handleClick}>
       <MovieImage
         src={`https://image.tmdb.org/t/p/w1280/${props.poster}`}
         alt={props.title}
