@@ -25,3 +25,23 @@ export const DetailPoster = styled.img`
   width: 300px;
   height: 450px;
 `;
+
+export const NotFoundInfo = styled.div`
+  margin-left: 200px;
+
+  h2 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  button {
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
+    color: red;
+    cursor: pointer;
+  }
+`;

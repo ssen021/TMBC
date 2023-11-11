@@ -1,4 +1,40 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
+import { LoginBox, StyledParagraph, Button } from "./LoginControl.style";
+
+const LoginControl = () => {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  const handleLoginClick = () => {
+    setIsLoggedIn(true);
+  };
+
+  const handleLogoutClick = () => {
+    setIsLoggedIn(false);
+  };
+
+  let button;
+  if (isLoggedIn) {
+    button = <Button onClick={handleLogoutClick}>로그아웃</Button>;
+  } else {
+    button = <Button onClick={handleLoginClick}>로그인</Button>;
+  }
+
+  return (
+    <LoginBox>
+      {button}
+      {isLoggedIn ? (
+        <StyledParagraph>환영합니다!</StyledParagraph>
+      ) : (
+        <StyledParagraph>로그인 해주세요</StyledParagraph>
+      )}
+    </LoginBox>
+  );
+};
+
+export default LoginControl;
+
+//5주차 login
+/*import React, { Component } from "react";
 import { LoginBox, StyledParagraph, Button } from "./LoginControl.style";
 
 class LoginControl extends Component {
@@ -40,4 +76,4 @@ class LoginControl extends Component {
   }
 }
 
-export default LoginControl;
+export default LoginControl;*/

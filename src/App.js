@@ -18,6 +18,7 @@ function App() {
           <Route path="/TV" element={<TV />} />
           <Route path="/Celebrity" element={<Celebrity />} />
           <Route path="/movie/:title" element={<MovieDetail />} />
+          <Route path="/*" element={<NotFound />} />s
         </Routes>
       </BrowserRouter>
     </div>
