@@ -19,6 +19,7 @@ function Movie(props) {
       </MovieDescription>
       <MovieInfo>
         <div className="movie-title">{props.title}</div>
+        <div className="movie-rating">{props.voteAverage}</div>
       </MovieInfo>
     </StyledMovie>
   );

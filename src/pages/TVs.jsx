@@ -13,6 +13,7 @@ export default function TVs() {
             title={tv.name}
             poster={tv.poster_path}
             voteAverage={tv.vote_average}
+            overview={tv.overview}
           />
         ))}
       </MovieListContainer>
