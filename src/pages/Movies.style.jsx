@@ -45,3 +45,34 @@ export const NotFoundInfo = styled.div`
     cursor: pointer;
   }
 `;
+export const LoginInfo = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+  p {
+    font-size: 20px;
+  }
+  input {
+    height: 40px;
+    width: 500px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+  }
+  button {
+    margin-top: 10px;
+    height: 50px;
+    width: 500px;
+    color: #fff;
+    background-color: #0e0f37;
+    border-radius: 30px;
+    font-size: 20px;
+  }
+`;
+export const RedP = styled.div`
+  color: red;
+  font-size: 15px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+`;

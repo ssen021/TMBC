@@ -1,15 +1,21 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom"; //useNavigate를 가져오기
 import { LoginBox, StyledParagraph, Button } from "./LoginControl.style";
 
 const LoginControl = () => {
+  const navigate = useNavigate(); // useNavigate 사용
+
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   const handleLoginClick = () => {
     setIsLoggedIn(true);
+    // 로그인 페이지로 리다이렉트 (필요한 경우 경로를 조정하세요)
+    navigate("/login");
   };
 
   const handleLogoutClick = () => {
     setIsLoggedIn(false);
+    navigate("/home");
   };
 
   let button;
