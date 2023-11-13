@@ -4,9 +4,9 @@ import { LoginInfo, RedP } from "./Movies.style";
 
 export default function Loginpage() {
   const navigate = useNavigate();
-  const [email, setEmail] = useState(" ");
+  const [email, setEmail] = useState("");
   const [isEmailValid, setIsEmailValid] = useState(true);
-  const [pw, setPW] = useState(" ");
+  const [pw, setPW] = useState("");
   const [isPWValid, setIsPWValid] = useState(true);
 
   const handleHome = () => {
@@ -29,7 +29,10 @@ export default function Loginpage() {
     const inputValue = e.target.value;
     setPW(inputValue);
 
-    const isPWValid = /^[^\s]+$/.test(inputValue);
+    const isPWValid =
+      /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/.test(
+        inputValue
+      );
     setIsPWValid(isPWValid);
   };
 
@@ -38,10 +41,18 @@ export default function Loginpage() {
       <h2>이메일과 비밀번호를 입력해주세요</h2>
       <p>이메일 주소</p>
       <input type="text" value={email} onChange={EmailChange} />
-      {isEmailValid ? <RedP>&nbsp;</RedP> : <RedP>이메일형식이 아닙니다.</RedP>}
+      {isEmailValid ? (
+        <RedP>&nbsp;</RedP>
+      ) : (
+        <RedP>올바른 이메일을 입력해주세요.</RedP>
+      )}
       <p>비밀번호</p>
       <input type="password" value={pw} onChange={PWChange} />
-      {isPWValid ? <RedP>&nbsp;</RedP> : <RedP>비밀번호를 입력해주세요.</RedP>}
+      {isPWValid ? (
+        <RedP>&nbsp;</RedP>
+      ) : (
+        <RedP>영문,숫자,특수문자 포함 8자 이상 입력하세요.</RedP>
+      )}
       <button onClick={handleHome}>확인</button>
     </LoginInfo>
   );
