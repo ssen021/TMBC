@@ -6,7 +6,7 @@ import {
   MovieInfo,
 } from "./Movie.style";
 
-function Movie(props) {
+function Tv(props) {
   return (
     <StyledMovie>
       <MovieImage
@@ -25,4 +25,4 @@ function Movie(props) {
   );
 }
 
-export default Movie;
+export default Tv;
