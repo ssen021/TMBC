@@ -1,5 +1,5 @@
 import React from "react";
-import Tv from "../components/Tv"; // Movie 컴포넌트를 import합니다.
+import Tv from "../components/Tv";
 import tvs from "../tvDummy";
 import { MovieListContainer } from "./Movies.style";
 

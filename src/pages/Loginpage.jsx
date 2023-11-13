@@ -10,7 +10,7 @@ export default function Loginpage() {
   const [isPWValid, setIsPWValid] = useState(true);
 
   const handleHome = () => {
-    // 사용자가 버튼을 누를 때 유효성 검사를 수행
+    // 확인버튼을 누를 때 유효성 검사를 수행
     if (isEmailValid && isPWValid) {
       navigate("/Home");
     }
