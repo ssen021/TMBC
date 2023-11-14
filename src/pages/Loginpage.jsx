@@ -12,7 +12,7 @@ export default function Loginpage() {
   const handleHome = () => {
     // 확인버튼을 누를 때 유효성 검사를 수행
     if (isEmailValid && isPWValid) {
-      navigate("/Home");
+      navigate("/TMBC");
     }
   };
 
