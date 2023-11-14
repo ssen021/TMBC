@@ -6,7 +6,7 @@ export default function NotFound() {
   const navigate = useNavigate();
 
   const handleHome = () => {
-    navigate("/TMBC");
+    navigate("/Home");
   };
   return (
     <NotFoundInfo>
