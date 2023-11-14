@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/TMBC/static/css/main.43154927.css",
+    "main.js": "/TMBC/static/js/main.68ca8b8d.js",
+    "static/media/AD_image.svg": "/TMBC/static/media/AD_image.81396c681592a8af2fc7afcad2c47fcc.svg",
+    "index.html": "/TMBC/index.html",
+    "main.43154927.css.map": "/TMBC/static/css/main.43154927.css.map",
+    "main.68ca8b8d.js.map": "/TMBC/static/js/main.68ca8b8d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.43154927.css",
+    "static/js/main.68ca8b8d.js"
+  ]
+}
